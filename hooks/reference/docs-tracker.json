@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "bash .opencode/hooks/reference/scripts/docs-tracker.sh",
+        "timeout": 10
+      }
+    ]
+  }
+}

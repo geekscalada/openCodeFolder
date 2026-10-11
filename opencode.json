@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [".opencode/instructions.md"],
+  "skills": {
+    "paths": [".opencode/skills"]
+  },
+  "default_agent": "workspace-orchestrator",
+  "subagent_depth": 1,
+  "agent": {
+    "workspace-orchestrator": {
+      "description": "Coordina tareas multi-stack y delega solo cuando una especialización aporta valor.",
+      "mode": "primary"
+    }
+  },
+  "permission": {
+    "external_directory": {
+      "*": "ask"
+    }
+  }
+}
